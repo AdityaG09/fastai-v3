@@ -9,6 +9,8 @@ RUN pip install --upgrade -r requirements.txt
 
 COPY app app/
 
+RUN pip install Pillow==6.1
+
 RUN python app/server.py
 
 EXPOSE 5000
